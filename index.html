@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>AngularJS Basic App</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.4/angular.min.js"></script>
+    <script src="app.js"></script>
+    <script src="test.ctrl.js"></script>
+    <script src="data.ctrl.js"></script>
+</head>
+<body ng-app="app">
+
+  <h3>Testing the test controller code</h3>
+<div ng-controller="TestController as test">
+  <div class="container">
+      <p>The ID is {{greeting.id}}</p>
+      <p>The content is {{greeting.content}}</p>
+  </div>
+</div>
+
+  <h1>Testing the gtfs data</h2>
+  <div ng-controller="MainController as data">
+    <div class="container">
+        <p>B54 bus ID is {{VehicleRef.vref}}</p>
+        <p>The vehicle location is {{VehicleLocation.Longitude}}</p>
+    </div>
+  </div>
+
+
+</body>
+</html>
