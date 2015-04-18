@@ -6,13 +6,22 @@ This is the data backend part of a semester long project called "Ghost Bus" - an
 
 This simple web app will interact with the MTA SIRI API to grab B54 bus data. It will then parse the data and communicate with the Unity3D project in order to reflect the moving bus.
 
-###Deploy
+###Deploy in the Console 
 
 ```
 python app.py
 ```
 
 You'll probably need [python](https://www.python.org/) and [pip](https://github.com/pypa/pip) 
+
+###Deploy the Flask API
+
+The Flask API is still in testing!
+To run:
+```
+python testappserver.py
+```
+which uses the methods in testapp.py.
 
 ###Usage
 
