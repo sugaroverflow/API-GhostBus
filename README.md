@@ -22,3 +22,8 @@ though you'll have to handle parsing it accordingly.
 response = urllib2.urlopen('the-API-call-URL')
 ```
 
+###Inspiration
+
+The GhostBus API was built using this [flask and python example for Playstation games](https://github.com/falfaro/flask-example)
+
+
