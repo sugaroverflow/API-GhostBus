@@ -1,2 +1,2 @@
-web: gunicorn testapp:app --log-file
+web: gunicorn testapp:app
 heroku config:set WEB_CONCURRENCY=3
