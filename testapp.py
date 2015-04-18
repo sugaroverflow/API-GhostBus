@@ -29,13 +29,13 @@ def _closest_bus():
 """_get_Lat takes a specific busnum and runs _get_specific_data(busnum)
 to find and return the latitude"""
 def _get_Lat(busnum):
-    _get_specific_data(busnum)
+    json_data = _get_specific_data(busnum)
     latitude=json_data['Siri']['ServiceDelivery']['VehicleMonitoringDelivery'][0]['VehicleActivity'][0]['MonitoredVehicleJourney']['VehicleLocation']['Latitude']
     return latitude
 
 """_get_Long takes a specific busnum and runs _get_specific_data(busnum)
 to find and return the longitude"""
 def _get_Long(busnum):
-    _get_specific_data(busnum)
+    json_data = _get_specific_data(busnum)
     latitude=json_data['Siri']['ServiceDelivery']['VehicleMonitoringDelivery'][0]['VehicleActivity'][0]['MonitoredVehicleJourney']['VehicleLocation']['Longitude']
     return longitude

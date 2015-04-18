@@ -4,15 +4,17 @@ import testapp
 from flask import Flask
 app = Flask(__name__)
 
-@app.route('/')
-def _alldata():
+@app.route('/alldata')
+def _all_data():
     return testapp._get_all_data()
 
+@app.route('/data/<busnum>')
+def _specific_data(busnum):
+    return testapp._get_specific_data(busnum=busnum)
 
-@app.route('/')
-def gps():
-    return "gps"
-
+@app.route('/gps/<busnum>')
+def _gps_data(busnum):
+    return testapp._get_Lat(busnum=busnum)
 
 if __name__ == '__main__':
   app.run(debug=True)
