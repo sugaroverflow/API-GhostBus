@@ -17,7 +17,7 @@ You'll probably need [python](https://www.python.org/) and [pip](https://github.
 ###Usage
 
 You can use this for any GTFS feed from the [SIRI API](http://bustime.mta.info/wiki/Developers/SIRIVehicleMonitoring)
-though you'll have to handle parsing it yourself.
+though you'll have to handle parsing it accordingly.
 ```
 response = urllib2.urlopen('the-API-call-URL')
 ```
