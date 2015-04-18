@@ -12,11 +12,11 @@ This simple web app will interact with the MTA SIRI API to grab B54 bus data. It
 python app.py
 ```
 
-You'll probably need [https://www.python.org/](python) and [https://github.com/pypa/pip](pip) 
+You'll probably need [python](https://www.python.org/) and [pip](https://github.com/pypa/pip) 
 
 ###Usage
 
-You can use this for any GTFS feed from the [http://bustime.mta.info/wiki/Developers/SIRIVehicleMonitoring](SIRI API)
+You can use this for any GTFS feed from the [SIRI API](http://bustime.mta.info/wiki/Developers/SIRIVehicleMonitoring)
 ```
 response = urllib2.urlopen('the-API-call-URL')
 ```
