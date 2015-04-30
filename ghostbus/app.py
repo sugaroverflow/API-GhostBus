@@ -1,3 +1,6 @@
+#currently this app.py file runs the URL to find the location
+#of the bus_num specified (hardcoded)
+
 #this is the main function of the Ghost bus API
 #uses the urllib2 from python for opening the url
 import urllib2
